@@ -6,6 +6,7 @@ export const AppRouter = () => {
         {/*  Login y registro */}
         <Route/>
         {/*  JournalApp */}
+        <Route/>
     </Routes>
   )
 }
