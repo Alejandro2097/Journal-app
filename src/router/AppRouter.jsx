@@ -1,12 +1,13 @@
-import { Navigate, Route, Routes } from 'react-router-dom';
-import { LoginPage, RegisterPage } from '../pages';
+import { Route, Routes } from 'react-router-dom';
+import { LoginPage } from '../pages';
 
 export const AppRouter = () => {
   return (
     <Routes>
+        {/*  Login y registro */}
         <Route path="login" element={<LoginPage/>}/>
-        <Route path="register" element={<RegisterPage/>}/>
-        <Route path="/*" element={<Navigate to="/auth/login"/>}/>
+        {/*  JournalApp */}
+        <Route/>
     </Routes>
   )
 }
