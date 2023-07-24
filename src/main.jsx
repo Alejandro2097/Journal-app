@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 
 import { JournalApp } from './JournalApp.jsx'
 
-import './index.css'
+import './styles.css'
 import { BrowserRouter } from 'react-router-dom'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
