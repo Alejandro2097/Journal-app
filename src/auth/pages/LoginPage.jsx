@@ -1,7 +1,6 @@
 import { Google } from "@mui/icons-material";
-import { Grid, Typography, TextField, Button,Link } from "@mui/material";
+import { Button, Grid, Link, TextField, Typography } from "@mui/material";
 import { Link as RouterLink } from 'react-router-dom';
-
 
 export const LoginPage = () => {
   return (
@@ -39,11 +38,6 @@ export const LoginPage = () => {
             </Grid>
 
             <Grid container spacing={2} sx={{mb: 2, mt: 1}}>
-              <Grid item xs={12} sm={6}>
-                <Button variant='contained' fullWidth>
-                  Login
-                </Button>
-              </Grid>
               <Grid item xs={12} sm={6}>
                 <Button variant='contained' fullWidth>
                   Login
