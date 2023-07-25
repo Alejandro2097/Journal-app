@@ -1,4 +1,6 @@
-import { Grid, Typography, TextField, Button } from "@mui/material"
+import { Google } from "@mui/icons-material";
+import { Grid, Typography, TextField, Button,Link } from "@mui/material";
+import { Link as RouterLink } from 'react-router-dom';
 
 
 export const LoginPage = () => {
@@ -47,6 +49,18 @@ export const LoginPage = () => {
                   Login
                 </Button>
               </Grid>
+              <Grid item xs={12} sm={6}>
+                <Button variant='contained' fullWidth>
+                  <Google/>
+                  <Typography sx={{ml:1}}>Google</Typography>
+                </Button>
+              </Grid>
+            </Grid>
+            
+            <Grid container direction='row' justifyContent='end'>
+              <Link component={ RouterLink } color='inherit' to="/auth/register">
+                Crear una cuenta
+              </Link>
             </Grid>
           </Grid>
         </form>
