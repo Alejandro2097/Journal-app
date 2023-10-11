@@ -4,9 +4,9 @@ import { Provider } from 'react-redux'
 import { BrowserRouter } from 'react-router-dom'
 
 import { JournalApp } from './JournalApp.jsx'
-import { store } from './store';
 
 import './styles.css'
+import { store } from './store'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
