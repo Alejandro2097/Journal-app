@@ -4,9 +4,16 @@ import { Link as RouterLink } from 'react-router-dom';
 
 import { AuthLayout } from '../layout/AuthLayout';
 import { useForm } from '../../hooks';
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { checkingAuthentication } from '../../store/auth/thunks';
 
 export const LoginPage = () => {
+  const dispatch = useDispatch();
 
+  useEffect(() => {
+    dispatch(checkingAuthentication());
+  }, []) 
   const { email, password, onInputChange} = useForm({
     email: 'fernando@google.com',
     password: '123455',
@@ -15,12 +22,13 @@ export const LoginPage = () => {
 
   const onSubmit = (event) => { 
     event.preventDefault();
-
+    dispatch(checkingAuthentication());
 
     console.log({email, password})
   }
 
   const onGoogleSignIn = () => {
+    dispatch(checkingAuthentication());
     console.log('onGoogleSignIn')
   }
   return (
