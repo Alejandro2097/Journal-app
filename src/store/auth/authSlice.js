@@ -14,8 +14,13 @@ export const authSlice = createSlice({
   },
   //funciones que modifican el estado
   reducers: {
-    login: (state, action) => {
-
+    login: (state, { payload }) => {
+      state.status = 'not-authenticated';
+      state.uid = null;
+      state.email = null;
+      state.displayName = null;
+      state.photoURL = null;
+      state.errorMessage = payload.errorMessage;
     },
     logout: (state, payload) => { 
 
