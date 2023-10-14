@@ -2,8 +2,8 @@ import { Google } from '@mui/icons-material';
 import { Button, Grid, Link, TextField, Typography } from '@mui/material';
 import { Link as RouterLink } from 'react-router-dom';
 
-import { AuthLayout } from '../layout/AuthLayout';
 import { useForm } from '../../hooks/useForm';
+import { AuthLayout } from '../layout/AuthLayout';
 
 export const RegisterPage = () => {
 
